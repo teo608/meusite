@@ -1,137 +1,109 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TEO-REDES</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0a1f44;
-      color: white;
-    }
-    header {
-      background-color: #0c2a68;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      margin-top: 5px;
-      font-size: 1em;
-      color: #a9c5ff;
-    }
-    nav {
-      background-color: #0d3a8c;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .planos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 40px 20px;
-      gap: 20px;
-    }
-    .plano {
-      background-color: #ffffff10;
-      padding: 20px;
-      border-radius: 12px;
-      width: 260px;
-      text-align: center;
-      box-shadow: 0 0 10px #00000030;
-    }
-    .plano h2 {
-      margin-top: 0;
-      font-size: 1.5em;
-      color: #4eaaff;
-    }
-    .plano p {
-      font-size: 1.2em;
-      margin: 10px 0;
-    }
-    .botao-teste {
-      display: block;
-      margin: 40px auto;
-      background-color: #007bff;
-      color: white;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1.1em;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #0c2a68;
-      font-size: 0.9em;
-      color: #a9c5ff;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TEO-REDE oferece consultoria especializada em redes de internet, com serviços de instalação de redes cabeadas, montagem de racks, passagem de cabos e mais.">
+    <title>TEO-REDE - Consultoria em Redes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2d3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .services, .about, .contact {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #2d3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .price {
+            color: #e67e22;
+            font-weight: bold;
+        }
+        .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>TEO-REDES</h1>
-    <p>Conectando você ao futuro com qualidade e velocidade</p>
-  </header>
 
-  <nav>
-    <a href="#">Início</a>
-    <a href="#">Planos</a>
-    <a href="#">Contato</a>
-  </nav>
+<header>
+    <h1>TEO-REDE</h1>
+    <p>Consultoria em Redes de Internet</p>
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+</header>
 
-  <section class="planos">
-    <div class="plano">
-      <h2>Uruaçu</h2>
-      <p>600 MEGAS - R$ 109,90</p>
-      <p>800 MEGAS - R$ 119,90</p>
-      <p>1 GB - R$ 139,90</p>
-    </div>
-    <div class="plano">
-      <h2>Campinorte</h2>
-      <p>600 MEGAS - R$ 109,90</p>
-      <p>800 MEGAS - R$ 119,90</p>
-      <p>1 GB - R$ 139,90</p>
-    </div>
-    <div class="plano">
-      <h2>Nova Glória</h2>
-      <p>30 MEGAS - R$ 79,90</p>
-      <p>60 MEGAS - R$ 99,90</p>
-      <p>100 MEGAS - R$ 119,90</p>
-    </div>
-    <div class="plano">
-      <h2>Alto Horizonte</h2>
-      <p>600 MEGAS - R$ 109,90</p>
-      <p>800 MEGAS - R$ 119,90</p>
-      <p>1 GB - R$ 139,90</p>
-    </div>
-    <div class="plano">
-      <h2>Nova Iguaçu</h2>
-      <p>600 MEGAS - R$ 109,90</p>
-      <p>800 MEGAS - R$ 119,90</p>
-      <p>1 GB - R$ 139,90</p>
-    </div>
-  </section>
+<div class="container">
 
-  <a class="botao-teste" href="https://www.speedtest.net/pt" target="_blank">TESTE SUA VELOCIDADE</a>
+    <section id="about" class="about">
+        <h2>Sobre Nós</h2>
+        <p>Na TEO-REDE, oferecemos soluções de consultoria especializadas em redes de internet, com experiência em montagem de redes cabeadas, configuração de roteadores, montagem de racks e muito mais. Com planos acessíveis a partir de <span class="price">R$250,00</span>, estamos prontos para atender sua empresa ou residência em Uruaçu - GO.</p>
+    </section>
 
-  <footer>
-    © 2025 TEO-REDES — Todos os direitos reservados<br>
-    Contato: (00) 00000-0000 | contato@teo-redes.com.br
-  </footer>
+    <section id="services" class="services">
+        <h2>Serviços</h2>
+        <ul>
+            <li><strong>Redes Cabeadas:</strong> Instalação e manutenção de redes cabeadas para sua casa ou empresa.</li>
+            <li><strong>Montagem de Racks:</strong> Organize sua infraestrutura de TI com racks bem montados e eficientes.</li>
+            <li><strong>Passagem de Cabos:</strong> Realizamos a passagem de cabos de forma segura e organizada, garantindo o melhor desempenho.</li>
+            <li><strong>Formatação e Configuração de Redes:</strong> Configuração de redes de internet para garantir a melhor performance e segurança.</li>
+        </ul>
+        <p>Planos de consultoria a partir de <span class="price">R$250,00</span>. Entre em contato para mais informações.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para agendar uma visita ou obter mais informações sobre nossos serviços:</p>
+        <ul>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/559982032990" target="_blank">(55) 98203-2990</a></li>
+            <li><strong>Email:</strong> <a href="mailto:teoredes@gmail.com">teoredes@gmail.com</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/teoredes" target="_blank">@teoredes</a></li>
+            <li><strong>Endereço:</strong> Uruaçu - GO</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 TEO-REDE. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
+
