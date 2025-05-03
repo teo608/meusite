@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TEO-REDE oferece consultoria especializada em redes de internet, com serviços de instalação de redes cabeadas, montagem de racks, passagem de cabos e mais.">
-    <title>TEO-REDE - Consultoria em Redes</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Teo-Redes oferece consultoria especializada em redes de internet, com serviços de instalação de redes cabeadas, montagem de racks, passagem de cabos e mais.">
+    <title>Teo-Redes - Consultoria em Redes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,10 +13,20 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #2d3e50;
-            color: #fff;
+            background-color: #1d2b4b; /* Azul escuro */
+            color: #ffffff; /* Branco */
             padding: 20px 0;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header p {
+            margin-top: 5px;
+            font-size: 18px;
+            font-weight: lighter;
         }
         nav ul {
             list-style-type: none;
@@ -28,37 +37,58 @@
             margin: 0 15px;
         }
         nav ul li a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
         }
         .container {
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            color: #1d2b4b;
+            font-size: 28px;
+            margin-bottom: 20px;
         }
         .services, .about, .contact {
             margin-bottom: 40px;
         }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+        }
         footer {
-            background-color: #2d3e50;
-            color: #fff;
+            background-color: #1d2b4b;
+            color: #ffffff;
             text-align: center;
             padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
         .price {
             color: #e67e22;
             font-weight: bold;
         }
         .social-links a {
-            color: #fff;
+            color: #ffffff;
             margin: 0 10px;
             text-decoration: none;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>TEO-REDE</h1>
+    <h1>Teo-Redes</h1>
     <p>Consultoria em Redes de Internet</p>
     <nav>
         <ul>
@@ -72,12 +102,12 @@
 <div class="container">
 
     <section id="about" class="about">
-        <h2>Sobre Nós</h2>
-        <p>Na TEO-REDE, oferecemos soluções de consultoria especializadas em redes de internet, com experiência em montagem de redes cabeadas, configuração de roteadores, montagem de racks e muito mais. Com planos acessíveis a partir de <span class="price">R$250,00</span>, estamos prontos para atender sua empresa ou residência em Uruaçu - GO.</p>
+        <h2 class="section-title">Sobre Nós</h2>
+        <p>Na Teo-Redes, oferecemos soluções de consultoria especializadas em redes de internet, com experiência em montagem de redes cabeadas, configuração de roteadores, montagem de racks e muito mais. Com planos acessíveis a partir de <span class="price">R$250,00</span>, estamos prontos para atender sua empresa ou residência em Uruaçu - GO.</p>
     </section>
 
     <section id="services" class="services">
-        <h2>Serviços</h2>
+        <h2 class="section-title">Serviços</h2>
         <ul>
             <li><strong>Redes Cabeadas:</strong> Instalação e manutenção de redes cabeadas para sua casa ou empresa.</li>
             <li><strong>Montagem de Racks:</strong> Organize sua infraestrutura de TI com racks bem montados e eficientes.</li>
@@ -88,7 +118,7 @@
     </section>
 
     <section id="contact" class="contact">
-        <h2>Contato</h2>
+        <h2 class="section-title">Contato</h2>
         <p>Entre em contato conosco para agendar uma visita ou obter mais informações sobre nossos serviços:</p>
         <ul>
             <li><strong>WhatsApp:</strong> <a href="https://wa.me/message/OWBTRTQJPVPYH1" target="_blank">Clique aqui para enviar uma mensagem pelo WhatsApp</a></li>
@@ -101,7 +131,7 @@
 </div>
 
 <footer>
-    <p>&copy; 2025 TEO-REDE. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Teo-Redes. Todos os direitos reservados.</p>
 </footer>
 
 </body>
