@@ -5,28 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Teo-Redes oferece consultoria especializada em redes de internet, com serviços de instalação de redes cabeadas, montagem de racks, passagem de cabos e mais.">
     <title>Teo-Redes - Consultoria em Redes</title>
+    <!-- Fontes elegantes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #0A1D2C; /* Azul escuro */
+            color: #fff;
         }
         header {
-            background-color: #1d2b4b; /* Azul escuro */
-            color: #ffffff; /* Branco */
-            padding: 20px 0;
+            background-color: #1D3557; /* Azul mais claro */
+            color: #fff;
+            padding: 30px 0;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         header h1 {
-            margin: 0;
             font-size: 36px;
+            margin: 0;
+            font-weight: 600;
         }
         header p {
             margin-top: 5px;
-            font-size: 18px;
-            font-weight: lighter;
+            font-size: 20px;
+            font-weight: 300;
         }
         nav ul {
             list-style-type: none;
@@ -34,54 +38,64 @@
         }
         nav ul li {
             display: inline;
-            margin: 0 15px;
+            margin: 0 20px;
         }
         nav ul li a {
-            color: #ffffff;
+            color: #fff;
             text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
+            font-weight: 600;
+            font-size: 18px;
         }
         .container {
-            padding: 40px 20px;
+            padding: 50px 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
         .section-title {
-            color: #1d2b4b;
             font-size: 28px;
             margin-bottom: 20px;
+            color: #F1FAEE;
         }
         .services, .about, .contact {
-            margin-bottom: 40px;
+            margin-bottom: 60px;
+        }
+        .services img, .about img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         footer {
-            background-color: #1d2b4b;
-            color: #ffffff;
+            background-color: #1D3557;
+            color: #fff;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px;
         }
         .price {
             color: #e67e22;
             font-weight: bold;
         }
         .social-links a {
-            color: #ffffff;
-            margin: 0 10px;
+            color: #fff;
+            margin: 0 15px;
             text-decoration: none;
+            font-size: 18px;
         }
         .social-links a:hover {
-            text-decoration: underline;
+            color: #e67e22;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -104,6 +118,9 @@
     <section id="about" class="about">
         <h2 class="section-title">Sobre Nós</h2>
         <p>Na Teo-Redes, oferecemos soluções de consultoria especializadas em redes de internet, com experiência em montagem de redes cabeadas, configuração de roteadores, montagem de racks e muito mais. Com planos acessíveis a partir de <span class="price">R$250,00</span>, estamos prontos para atender sua empresa ou residência em Uruaçu - GO.</p>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/800x300.png?text=Imagem+de+Redes" alt="Imagem de Redes">
+        </div>
     </section>
 
     <section id="services" class="services">
@@ -115,6 +132,9 @@
             <li><strong>Formatação e Configuração de Redes:</strong> Configuração de redes de internet para garantir a melhor performance e segurança.</li>
         </ul>
         <p>Planos de consultoria a partir de <span class="price">R$250,00</span>. Entre em contato para mais informações.</p>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/800x300.png?text=Imagem+de+Infraestrutura+de+Redes" alt="Imagem de Redes">
+        </div>
     </section>
 
     <section id="contact" class="contact">
